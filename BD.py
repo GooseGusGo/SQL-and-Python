@@ -89,7 +89,7 @@ class Database:
 
 
 if __name__ == '__main__':
-    with psycopg2.connect(database="clients_db", user="postgres", password="") as conn:
+    with psycopg2.connect(database="clients_db", user="postgres", password="Icx5Fm7Xy87") as conn:
         db_client = Database()
         db_client.drop_db()
         db_client.create_db()
@@ -119,5 +119,4 @@ if __name__ == '__main__':
         db_client.find_client(phone="55554")
         db_client.find_client(name="Stan")
         db_client.find_client(surname="Jonson")
-
     conn.close()
